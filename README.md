@@ -124,7 +124,7 @@ plt.title(f"PCA - {method}"); plt.legend(); plt.savefig(f"{prefix}_{method}_pca.
 Αποθηκεύει την εικόνα σε αρχείο .png με ανάλογο όνομα για την ομάδα.
 t-SNE προβολή
 
-Xt=TSNE(n_components=2,init="pca",random_state=42,learning_rate="auto").fit_transform(X)
+- Xt=TSNE(n_components=2,init="pca",random_state=42,learning_rate="auto").fit_transform(X)
 Παρόμοια λογική με PCA, αλλά η t-SNE είναι πιο «μη γραμμική» που σημαίνει οτι προσπαθεί να βρει φυσικά clusters, δηλαδή να ομαδοποιήσει λέξεις που έχουν παρόμοιο νόημα.
 Κάνει πάλι scatter plot και αποθηκεύει σε άλλο .png
 
